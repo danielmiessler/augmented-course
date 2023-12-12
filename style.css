@@ -2,21 +2,19 @@
     background-color: black;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hide any overflow */
+    justify-content: center; /* Center horizontally */
 }
 
 .gif-container {
-    width: 80%; /* Set the width of the GIF container to 60% of the window */
+    width: 75%; /* Set the width of the GIF container to 60% of the window */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
 }
 
 .gif-container img {
-    width: 100%;
-    height: auto; /* Maintain the aspect ratio of the GIF */
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the image's aspect ratio */
     object-fit: contain; /* Ensure the GIF maintains its aspect ratio without being cropped */
 }
 
