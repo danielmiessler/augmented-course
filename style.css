@@ -1,23 +1,22 @@
 .top-section {
     background-color: black;
     width: 100%;
-    height: 100vh; /* Adjust the height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Hide any overflow */
 }
 
 .gif-container {
     width: 60%; /* Set the width of the GIF container to 60% of the window */
-    height: 60%; /* Set the height of the GIF container to 60% of the window */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .gif-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio of the GIF */
     object-fit: contain; /* Ensure the GIF maintains its aspect ratio without being cropped */
 }
 
