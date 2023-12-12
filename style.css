@@ -4,9 +4,12 @@ body {
     font-family: 'Roboto', sans-serif; /* Modern font */
 }
 
+.top-section, .course-content, .stripe-checkout {
+    width: 100%; /* Set the width of each section to 100% of the window */
+}
+
 .top-section {
     background-color: black;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
