@@ -15,3 +15,15 @@
     opacity: 1;
 }
 
+.course-description {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 20px; /* Add some padding */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.stripe-checkout {
+    background-color: #e0e0e0; /* Different background color */
+    padding: 20px; /* Add some padding */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
