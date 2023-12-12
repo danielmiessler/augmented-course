@@ -7,10 +7,18 @@
     align-items: center;
 }
 
+.gif-container {
+    width: 60%; /* Set the width of the GIF container to 60% of the window */
+    height: 60%; /* Set the height of the GIF container to 60% of the window */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gif-container img {
     max-width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the GIF maintains its aspect ratio without being cropped */
 }
 
 .hidden {
