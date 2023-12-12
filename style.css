@@ -31,20 +31,20 @@ body {
 
 .course-content {
     background-color: #02349a; /* Dark blue background */
-    max-width: 800px; /* Set a maximum width for the content */
-    margin: 0 auto; /* Center the content */
     padding: 40px; /* Add some padding */
     color: #fff; /* White text color */
+    text-align: center; /* Center the text */
 }
 
 .course-intro {
-    text-align: center;
     margin-bottom: 30px;
 }
 
 .course-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Evenly distribute the columns */
+    max-width: 800px; /* Set a maximum width for the columns */
+    margin: 0 auto; /* Center the columns */
 }
 
 .column {
