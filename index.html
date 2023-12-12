@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Course Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="gif-background">
+        <img src="your-gif.gif" alt="Background GIF">
+    </div>
+
+    <div class="course-description hidden">
+        <h1>AI Course Title</h1>
+        <p>Description of the course...</p>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <!-- Add more features as needed -->
+        </ul>
+        <!-- Add more content as needed -->
+    </div>
+
+    <div class="stripe-checkout hidden">
+        <button id="checkout-button">Purchase Course</button>
+    </div>
+
+    <script>
+        function revealOnScroll() {
+            var elements = document.querySelectorAll('.hidden');
+            for (var i = 0; i < elements.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = elements[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    elements[i].classList.add('animate');
+                } else {
+                    elements[i].classList.remove('animate');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+
+        var stripe = Stripe('your_publishable_key');
+
+        document.getElementById('checkout-button').addEventListener('click', function () {
+            stripe.redirectToCheckout({
+                lineItems: [{price: 'your_price_id', quantity: 1}],
+                mode: 'payment',
+                successUrl: 'https://yourdomain.com/success',
+                cancelUrl: 'https://yourdomain.com/cancel',
+            })
+            .then(function (result) {
+                if (result.error) {
+                    console.error(result.error.message);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
