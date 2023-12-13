@@ -1,65 +1,104 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Keep Roboto for body text */
+    font-family: 'Roboto', sans-serif;
     background: #02349a; /* Brand's dark blue */
-    color: #ffffff; /* Maintain contrast with white text */
+    color: #ffffff;
+}
+
+.top-section {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gif-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .course-content {
-    padding: 60px 40px; /* Increase padding for a more spacious feel */
-    max-width: 1200px; /* Limit the width to maintain readability */
-    margin: 0 auto; /* Center the content */
-}
-
-h2 {
-    font-weight: 300; /* Lighter font-weight for a modern look */
-    margin-bottom: 1rem; /* Add more space below headings */
-    text-transform: uppercase; /* Stylistic choice for headings */
-    letter-spacing: 1px; /* Increase letter spacing for uppercase text */
+    padding: 40px 0;
+    background-color: #02349a; /* Dark blue background */
+    color: #fff;
+    text-align: center;
 }
 
 .course-intro {
-    font-size: 1.1rem; /* Slightly larger font size for intro paragraph */
-    margin-bottom: 2rem; /* More space below the intro for separation */
-    opacity: 0.9; /* Slightly lower opacity for less emphasis */
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 .course-columns {
     display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
-    gap: 20px; /* Add gap between columns */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .column {
-    flex: 1; /* Flexible column widths */
-    min-width: 250px; /* Minimum width so content doesn't get too squished */
-    background: rgba(255, 255, 255, 0.1); /* Slightly see-through white for contrast */
-    padding: 20px; /* Padding inside columns */
-    border-radius: 5px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    flex: 1;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .column h3 {
-    font-size: 1.3rem; /* Larger font size for subheadings */
-    margin-bottom: 0.5rem; /* Less space below subheadings */
-    color: #FFD700; /* Gold color for highlighting titles */
+    margin-bottom: 10px;
+    color: #8a2be2; /* Purple for titles */
 }
 
-/* Maintain your existing .stripe-checkout styles */
 .stripe-checkout {
-    /* ... existing styles ... */
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-/* Additional media query for responsiveness */
+.stripe-checkout img {
+    max-width: 65%;
+    max-height: 65vh;
+    height: auto;
+    border: 2px solid #8a2be2; /* Purple border */
+}
+
 @media (max-width: 768px) {
-    .course-columns {
-        flex-direction: column; /* Stack columns vertically on small screens */
+    .top-section, .gif-container {
+        width: 100%;
     }
+
+    .course-columns {
+        flex-direction: column;
+    }
+
     .column {
-        /* Full width on small screens */
         flex: 0 0 100%;
         max-width: 100%;
-        margin-bottom: 20px; /* Add space between stacked columns */
+        margin-bottom: 20px;
+    }
+
+    .stripe-checkout img {
+        max-width: 100%;
+        max-height: none;
     }
 }
