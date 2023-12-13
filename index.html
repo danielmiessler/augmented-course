@@ -58,28 +58,6 @@
             <img src="stripe.png" alt="Stripe Checkout" />
         </a>
     </div>
-
-    <script>
-        // Your existing JavaScript code for revealOnScroll
-
-        // Additional code to load the image as soon as it's visible
-        function loadPaymentImageWhenVisible() {
-            var paymentImage = document.getElementById('payment-image');
-            var paymentSection = document.querySelector('.stripe-checkout');
-            var windowHeight = window.innerHeight;
-            var elementTop = paymentSection.getBoundingClientRect().top;
-            var elementVisible = 150;
-
-            if (elementTop < windowHeight - elementVisible) {
-                paymentImage.src = "your-image-url.jpg"; // Set the actual image URL here
-            }
-        }
-
-        window.addEventListener('scroll', function() {
-            revealOnScroll();
-            loadPaymentImageWhenVisible();
-        });
-    </script>
     
 </body>
 </html>
