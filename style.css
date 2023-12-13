@@ -43,26 +43,36 @@ body {
 
 .course-columns {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between; /* Ensures that the columns are evenly spaced */
+    flex-wrap: nowrap; /* Prevents wrapping of columns */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .column {
     flex: 1;
-    min-width: 250px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    margin: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Maintain some space between columns */
+    text-align: left; /* Aligns text to the left */
 }
 
 .column h3 {
-    margin-bottom: 10px;
-    color: #8a2be2; /* Purple for titles */
+    color: #4b0082; /* Darker purple for headers */
+}
+
+.column p {
+    position: relative;
+    padding-left: 20px; /* Space for bullet */
+}
+
+.column p:before {
+    content: '•'; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #4b0082; /* Darker purple for bullets */
 }
 
 .stripe-checkout {
@@ -79,22 +89,14 @@ body {
     max-width: 65%;
     max-height: 65vh;
     height: auto;
-    border: 2px solid #8a2be2; /* Purple border */
+    border: 2px solid #4b0082; /* Darker purple border */
 }
 
-@media (max-width: 768px) {
-    .top-section, .gif-container {
-        width: 100%;
-    }
-
-    .course-columns {
-        flex-direction: column;
-    }
-
-    .column {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
+@media (max-width: 1200px) {
+    .course-columns, .column {
+        flex-wrap: wrap;
+        flex: 0 0 100%; /* Make columns full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for stacked layout */
     }
 
     .stripe-checkout img {
