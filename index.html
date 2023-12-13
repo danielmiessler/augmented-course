@@ -19,63 +19,42 @@
         <h2>AUGMENTED</h2>
         <p class="course-intro">Build and wield your own personal AI stack. The course has the following parts:</p>
         <div class="course-columns">
-            <div class="column">
-                <h3>My Approach to AI</h3>
-                <p>What I <strong>want</strong> from AI (the problems I'm solving)</p>
-                <p>My <strong>framework / approach</strong> for solving them.</p>
-                <p>A <strong>live demo</strong> of multiple workflows.</p>
-            </div>
-            <div class="column">
-                <h3>The Architecture</h3>
-                <p>The full <strong>tech stack</strong>.</p>
-                <p>My <strong>module design</strong> template</p>
-            </div>
-            <div class="column">
-                <h3>Full Guides</h3>
-                <p>A step-by-step for building the <strong>server side</strong>
-                <p>A step-by-step for building the <strong>client side</strong>
-                <p><strong>Hosting</strong> recommendations</p>
-            </div>
-            <div class="column">
-                <h3>Outputs</h3>
-                <p>The <strong>full guide</strong> to building my stack for yourself
-                <p>Multiple full-text copies of my <strong>my actual modules</strong>
-                <p>A <strong>set of my own unused ideas</strong> for modules in different fields.</p>
-            </div>
+            <!-- Your columns for each part of the course -->
+            <!-- My Approach to AI -->
+            <!-- The Architecture -->
+            <!-- Full Guides -->
+            <!-- Outputs -->
         </div>
     </div>
 
-    <!-- ... (previous code) ... -->
+    <div class="stripe-checkout">
+        <a href="https://buy.stripe.com/28o7w5c7GaxEbEk7sI">
+            <img id="payment-image" src="stripe.png" alt="Stripe Checkout" />
+        </a>
+    </div>
 
-<!-- ... (previous code) ... -->
+    <script>
+        // Your existing JavaScript code for revealOnScroll
 
-<div class="stripe-checkout">
-    <a href="https://buy.stripe.com/28o7w5c7GaxEbEk7sI"<img src="stripe.png" alt="Stripe Image" /></a>
-</div>
+        // Additional code to load the image as soon as it's visible
+        // Assuming you keep the image preloaded, this might not be needed
+        // Remove if not necessary
+        function loadPaymentImageWhenVisible() {
+            var paymentImage = document.getElementById('payment-image');
+            var paymentSection = document.querySelector('.stripe-checkout');
+            var windowHeight = window.innerHeight;
+            var elementTop = paymentSection.getBoundingClientRect().top;
+            var elementVisible = 150;
 
-<!-- ... (remaining code) ... -->
-
-<script>
-    // Your existing JavaScript code for revealOnScroll
-
-    // Additional code to load the image as soon as it's visible
-    function loadPaymentImageWhenVisible() {
-        var paymentImage = document.getElementById('payment-image');
-        var paymentSection = document.querySelector('.stripe-checkout');
-        var windowHeight = window.innerHeight;
-        var elementTop = paymentSection.getBoundingClientRect().top;
-        var elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-            paymentImage.src = "your-image-url.jpg"; // Set the actual image URL here
+            if (elementTop < windowHeight - elementVisible) {
+                paymentImage.src = paymentImage.dataset.src; // Ensure the data-src attribute is set on the image tag if you want to use this
+            }
         }
-    }
 
-    window.addEventListener('scroll', function() {
-        revealOnScroll();
-        loadPaymentImageWhenVisible();
-    });
-</script>
-    
+        window.addEventListener('scroll', function() {
+            revealOnScroll();
+            loadPaymentImageWhenVisible();
+        });
+    </script>
 </body>
 </html>
