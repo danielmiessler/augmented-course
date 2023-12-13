@@ -17,7 +17,7 @@ body {
 }
 
 .gif-container {
-    width: 60%; /* Set the width of the GIF container to 60% of the window */
+    width: 80%; /* Set the width of the GIF container to 60% of the window */
     display: flex;
     justify-content: center;
     align-items: center;
