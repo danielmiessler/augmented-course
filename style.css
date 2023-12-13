@@ -1,81 +1,65 @@
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-family: 'Roboto', sans-serif; /* Modern font */
-}
-
-.top-section, .course-content, .stripe-checkout {
-    width: 100%; /* Set the width of each section to 100% of the window */
-}
-
-.top-section {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hide any overflow */
-}
-
-.gif-container {
-    width: 60%; /* Set the width of the GIF container to 60% of the window */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gif-container img {
-    width: 100%;
-    height: auto; /* Maintain the aspect ratio of the GIF */
-    object-fit: contain; /* Ensure the GIF maintains its aspect ratio without being cropped */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Keep Roboto for body text */
+    background: #02349a; /* Brand's dark blue */
+    color: #ffffff; /* Maintain contrast with white text */
 }
 
 .course-content {
-    background-color: #02349a; /* Dark blue background */
-    padding: 40px; /* Add some padding */
-    color: #fff; /* White text color */
-    text-align: center; /* Center the text */
+    padding: 60px 40px; /* Increase padding for a more spacious feel */
+    max-width: 1200px; /* Limit the width to maintain readability */
+    margin: 0 auto; /* Center the content */
+}
+
+h2 {
+    font-weight: 300; /* Lighter font-weight for a modern look */
+    margin-bottom: 1rem; /* Add more space below headings */
+    text-transform: uppercase; /* Stylistic choice for headings */
+    letter-spacing: 1px; /* Increase letter spacing for uppercase text */
 }
 
 .course-intro {
-    margin-bottom: 30px;
+    font-size: 1.1rem; /* Slightly larger font size for intro paragraph */
+    margin-bottom: 2rem; /* More space below the intro for separation */
+    opacity: 0.9; /* Slightly lower opacity for less emphasis */
 }
 
 .course-columns {
     display: flex;
-    justify-content: space-around; /* Evenly distribute the columns */
-    max-width: 800px; /* Set a maximum width for the columns */
-    margin: 0 auto; /* Center the columns */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    gap: 20px; /* Add gap between columns */
 }
 
 .column {
-    flex: 1; /* Equal width for each column */
-    margin: 0 10px; /* Spacing between columns */
+    flex: 1; /* Flexible column widths */
+    min-width: 250px; /* Minimum width so content doesn't get too squished */
+    background: rgba(255, 255, 255, 0.1); /* Slightly see-through white for contrast */
+    padding: 20px; /* Padding inside columns */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .column h3 {
-    margin-bottom: 10px;
+    font-size: 1.3rem; /* Larger font size for subheadings */
+    margin-bottom: 0.5rem; /* Less space below subheadings */
+    color: #FFD700; /* Gold color for highlighting titles */
 }
 
+/* Maintain your existing .stripe-checkout styles */
 .stripe-checkout {
-    background-color: #fff; /* White background */
-    padding: 20px; /* Add some padding */
-    text-align: center;
+    /* ... existing styles ... */
 }
 
-/* ... (previous styles) ... */
-
-.stripe-checkout {
-    background-color: #fff; /* White background */
-    padding: 20px; /* Add some padding */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hide any overflow */
-}
-
-.stripe-checkout img {
-    max-width: 65%; /* Set the maximum width of the image to 80% of its container */
-    max-height: 65vh; /* Set the maximum height of the image to 80% of the viewport height */
-    height: auto; /* Maintain the aspect ratio of the image */
+/* Additional media query for responsiveness */
+@media (max-width: 768px) {
+    .course-columns {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    .column {
+        /* Full width on small screens */
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px; /* Add space between stacked columns */
+    }
 }
