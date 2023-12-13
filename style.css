@@ -86,10 +86,9 @@ body {
 }
 
 .stripe-checkout img {
-    max-width: 65%;
-    max-height: 65vh;
+    max-width: 80%;
+    max-height: 80vh;
     height: auto;
-    border: 2px solid #4b0082; /* Darker purple border */
 }
 
 @media (max-width: 1200px) {
