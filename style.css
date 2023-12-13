@@ -1,73 +1,81 @@
-/* ... (previous styles) ... */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.top-section, .course-content, .stripe-checkout {
+    width: 100%; /* Set the width of each section to 100% of the window */
+}
+
+.top-section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.gif-container {
+    width: 60%; /* Set the width of the GIF container to 60% of the window */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio of the GIF */
+    object-fit: contain; /* Ensure the GIF maintains its aspect ratio without being cropped */
+}
 
 .course-content {
     background-color: #02349a; /* Dark blue background */
-    text-align: center;
-    padding: 40px 0;
-    color: white;
-}
-
-.course-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    font-weight: 700;
+    padding: 40px; /* Add some padding */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
 }
 
 .course-intro {
-    margin-bottom: 2em;
-    font-weight: 300;
-    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 .course-columns {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5em;
+    display: flex;
+    justify-content: space-around; /* Evenly distribute the columns */
+    max-width: 800px; /* Set a maximum width for the columns */
+    margin: 0 auto; /* Center the columns */
 }
 
 .column {
-    background-color: #ffffff;
-    color: #333333;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1; /* Equal width for each column */
+    margin: 0 10px; /* Spacing between columns */
 }
 
 .column h3 {
-    color: #02349a;
-    font-size: 1.5em;
-    margin-bottom: 0.75em;
-}
-
-.column p {
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: 0.75em;
-}
-
-.column p strong {
-    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .stripe-checkout {
-    background-color: #fff;
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add some padding */
     text-align: center;
-    padding: 20px;
-    margin-top: 40px; /* Spacing between course content and checkout */
+}
+
+/* ... (previous styles) ... */
+
+.stripe-checkout {
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add some padding */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflow */
 }
 
 .stripe-checkout img {
-    max-width: 80%;
-    max-height: 80vh;
-    height: auto;
+    max-width: 65%; /* Set the maximum width of the image to 80% of its container */
+    max-height: 65vh; /* Set the maximum height of the image to 80% of the viewport height */
+    height: auto; /* Maintain the aspect ratio of the image */
 }
-
-@media screen and (max-width: 768px) {
-    .course-columns {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Add other responsive or styling rules as needed */
