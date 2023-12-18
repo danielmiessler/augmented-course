@@ -86,7 +86,7 @@ body {
 }
 
 .stripe-checkout img {
-    max-width: 70%;
+    max-width: 80%;
     max-height: 70vh;
     height: auto;
 }
