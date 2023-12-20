@@ -13,13 +13,12 @@
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h2 class="h2 font-hkgrotesk mb-4 uppercase">AUGMENT Yourself </h2>
           <div class="max-w-2xl mx-auto">
-            <p class="text-xl text-slate-500">I am running a space-limited, 3-hour AI course in January of 2024.</p>
-            <p class="text-xl text-slate-500">Learn to build and use your own personal AI ecosystem.</p>
+            <p class="text-xl text-slate-500">I am running a space-limited, 3-hour Live AI course in January of 2024.<br /></p>
+            <p class="text-xl text-slate-500">Here's what you'll learn:</p>
           </div>
         </div>
         
 
-        <!-- Carousel built with Swiper.js [https://swiperjs.com/] -->
         <!-- * Custom styles in src/css/additional-styles/theme.scss -->
         <div class="carousel swiper-container">
           <div class="swiper-wrapper">
@@ -30,8 +29,9 @@
                 <div class="font-hkgrotesk font-bold text-lg">My Approach to AI</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
                   <li>What I want from AI (the problems I'm solving)</li>
-                  <li>My framework / approach for solving them.</li>
-                  <li>A live demo of multiple workflows.</li>
+                  <li>My framework / approach for solving them</li>
+                  <li>Task componentization</li>
+                  <li>A live demo of multiple workflows</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -43,8 +43,9 @@
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-xl">The Architecture</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>The full tech stack.</li>
-                  <li>My module design template</li>
+                  <li>A full tech stack walkthrough</li>
+                  <li>A deep-dive on each component</li>
+                  <li>How I create patterns (AI modules)</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -56,7 +57,8 @@
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-xl">Full Guides</div>
                  <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>A step-by-step for building the server side</li>
+                  <li>What's needed to run your own stack.</li>
+                  <li>A step-by-step building the server side</li>
                   <li>A step-by-step for building the client side</li>
                   <li>Hosting recommendations</li>
                 </ul>
@@ -70,9 +72,9 @@
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-xl">Outputs</div>
                  <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>The full guide to building my stack for yourself</li>
-                  <li>Multiple full-text copies of my actual modules</li>
-                  <li>A set of my own unused ideas for modules in different fields.</li>
+                  <li>The full guide to building the stack for yourself</li>
+                  <li>Multiple full-text copies of multiple of my actual patterns/modules</li>
+                  <li>A set of my own unexplored ideas for patterns in various fields</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
