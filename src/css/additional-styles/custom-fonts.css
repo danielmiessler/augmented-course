@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'HK Grotesk';
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+    src: url('../../fonts/HKGrotesk-Bold.woff2') format('woff2'),
+        url('../../fonts/HKGrotesk-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    font-weight: 800;
+    font-style: normal;
+    font-display: fallback;
+    src: url('../../fonts/HKGrotesk-ExtraBold.woff2') format('woff2'),
+        url('../../fonts/HKGrotesk-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+    src: url('../../fonts/HKGrotesk-Medium.woff2') format('woff2'),
+        url('../../fonts/HKGrotesk-Medium.woff') format('woff');
+}
