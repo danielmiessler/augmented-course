@@ -1,0 +1,39 @@
+name: Deploy UI To S3/Cloudfront
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          cache: 'npm'
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build
+        env:
+          AWS_REGION: us-west-2
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_DEPLOY_ARN_STAGING }}
+          aws-region: us-west-2
+      - name: Copy files to bucket
+        run: |
+          aws s3 sync ./dist s3://augmented-unsupervised-learning/
+      - name: Invalidate Cloudfront
+        run: |
+          aws cloudfront create-invalidation --paths "/*" --distribution-id E1JZLRN2ZQN50Z
