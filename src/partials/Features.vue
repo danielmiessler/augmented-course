@@ -11,7 +11,7 @@
 
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2 font-hkgrotesk mb-4 uppercase">AUGMENT Yourself </h2>
+          <h2 class="h2 font-hkgrotesk mb-4 uppercase">A(I)UGMENT Yourself</h2>
           <div class="max-w-2xl mx-auto">
             <p class="text-xl text-slate-500">I am running a space-limited, 3-hour Live AI course in January of 2024.<br /></p>
             <p class="text-xl text-slate-500">Here's what you'll learn:</p>
