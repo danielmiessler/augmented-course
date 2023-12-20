@@ -27,7 +27,7 @@
             <div class="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
               <img class="mb-3" src="../images/features-icon-01.svg" width="56" height="56" alt="Icon 01">
               <div class="grow">
-                <div class="font-hkgrotesk font-bold text-xl">My Approach to AI</div>
+                <div class="font-hkgrotesk font-bold text-lg">My Approach to AI</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
                   <li>What I want from AI (the problems I'm solving)</li>
                   <li>My framework / approach for solving them.</li>
