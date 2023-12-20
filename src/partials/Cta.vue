@@ -14,7 +14,7 @@
 
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-          <h2 class="h2 font-hkgrotesk">Learn to build and use your own personal AI ecosystem.</h2>
+          <h2 class="h2 font-hkgrotesk">Build and wield your own personal AI ecosystem.</h2>
         </div>
 
         <!-- Buttons -->
