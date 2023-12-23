@@ -22,11 +22,10 @@
           <div class="max-w-2xl mx-auto">
             <p class="text-xl text-slate-500">
               I am running a space-limited, 3-hour live course on building AI
-              ecosystems.
-              <br />
+              ecosystems.<br />
             </p>
             <p class="text-lg text-slate-500">
-              <em>COURSE DATE:</em> January 13th, 2024 at 12PM Pacific.<br /><br />
+              <em>COURSE DATE: </em>January 13th, 2024 at 12PM Pacific.<br /><br />
             </p>
             <p class="text-xl text-slate-500">Here's what you'll learn:</p>
           </div>
