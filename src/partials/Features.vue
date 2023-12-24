@@ -21,8 +21,8 @@
           <h2 class="h2 font-hkgrotesk mb-4 uppercase">A(I)UGMENT Yourself</h2>
           <div class="max-w-2xl mx-auto">
             <p class="text-xl text-slate-500">
-              I am running a space-limited, 3-hour live course on building AI
-              ecosystems.<br />
+              I am running a space-limited, 3-hour live AI course in January
+              2024.<br />
             </p>
             <p class="text-lg text-slate-500">
               <em>COURSE DATE: </em>January 13th, 2024 at 12PM Pacific.<br /><br />
