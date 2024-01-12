@@ -25,7 +25,8 @@
               2024.<br />
             </p>
             <p class="text-lg text-slate-500">
-              <em>COURSE DATE: </em>January 13th, 2024 at 12PM Pacific.<br /><br />
+              CLOSED: The January 2024 course is now closed. Stay tuned for
+              future dates!<br /><br />
             </p>
             <p class="text-xl text-slate-500">Here's what you'll learn:</p>
           </div>
