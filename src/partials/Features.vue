@@ -47,13 +47,13 @@
               />
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-lg">
-                  My Approach to AI
+                  Human 3.0
                 </div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>What I want from AI (the problems I'm solving)</li>
-                  <li>My framework / approach for solving them</li>
-                  <li>Task componentization</li>
-                  <li>A live demo of multiple workflows</li>
+                  <li>What I see coming for us</li>
+                  <li>What I'm planning for and learning</li>
+                  <li>Introducing Human 3.0</li>
+                  <li>How to upgrade to Human 3.0</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -72,12 +72,12 @@
               />
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-xl">
-                  The Architecture
+                  Skillsets and Mental Frames
                 </div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>A full tech stack walkthrough</li>
-                  <li>A deep-dive on each component</li>
-                  <li>How I create patterns (AI modules)</li>
+                  <li>Mandatory skillsets and mental frames</li>
+                  <li>What to read, study, and learn post-AI</li>
+                  <li>What advice to give young people</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -95,12 +95,12 @@
                 alt="Icon 03"
               />
               <div class="grow">
-                <div class="font-hkgrotesk font-bold text-xl">Full Guides</div>
+                <div class="font-hkgrotesk font-bold text-xl">Life and Work Integration</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>What's needed to run your own stack.</li>
-                  <li>A step-by-step building the server side</li>
-                  <li>A step-by-step for building the client side</li>
-                  <li>Hosting recommendations</li>
+                  <li>My personal AI stack, and how I use it</li>
+                  <li>How to build a Life Workflow Diagram</li>
+                  <li>How to use Fabric to integrate AI into life/work</li>
+                  <li>Live Pattern-building for attendee use cases</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -118,17 +118,13 @@
                 alt="Icon 04"
               />
               <div class="grow">
-                <div class="font-hkgrotesk font-bold text-xl">Outputs</div>
+                <div class="font-hkgrotesk font-bold text-xl">Resources</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>The full guide to building the stack for yourself</li>
-                  <li>
-                    Multiple full-text copies of multiple of my actual
-                    patterns/modules
-                  </li>
-                  <li>
-                    A set of my own unexplored ideas for patterns in various
-                    fields
-                  </li>
+                  <li>A list of recommended books</li>
+                  <li>Recommended podcasts</li>
+                  <li>Recommended people to follow</li>
+                  <li>Favorite projects and tools</li>
+                  <li>Other recommended training/courses/resources</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
