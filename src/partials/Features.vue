@@ -24,8 +24,7 @@
               I run a space-limited, 3-hour live AI course twice a year.<br />
             </p>
             <p class="text-lg text-slate-500">
-              CLOSED: The January 2024 course is now closed. Stay tuned for
-              future dates!<br /><br />
+              The next course is July 26th, at 9AM Pacific.<br /><br />
             </p>
             <p class="text-xl text-slate-500">Here's what you'll learn:</p>
           </div>
