@@ -24,7 +24,7 @@
               I run a space-limited, 3-hour live AI course twice a year.<br />
             </p>
             <p class="text-lg text-slate-500">
-              The next course is July 26th, at 9AM Pacific.<br /><br />
+              The next course is February 3rd, 2025, at 9AM Pacific.<br /><br />
             </p>
             <p class="text-xl text-slate-500">Here's what you'll learn:</p>
           </div>
@@ -46,13 +46,12 @@
               />
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-lg">
-                  Human 3.0
+                  What's Coming
                 </div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
                   <li>What I see coming for us</li>
-                  <li>What I'm planning for and learning</li>
-                  <li>Introducing Human 3.0</li>
-                  <li>How to upgrade to Human 3.0</li>
+                  <li>How it'll affect jobs and society</li>
+                  <li>Considerations for preparation</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -94,12 +93,12 @@
                 alt="Icon 03"
               />
               <div class="grow">
-                <div class="font-hkgrotesk font-bold text-xl">Life and Work Integration</div>
+                <div class="font-hkgrotesk font-bold text-xl">Your Personal TELOS Infrastructure</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>My personal AI stack, and how I use it</li>
-                  <li>How to build a Life Workflow Diagram</li>
-                  <li>How to use Fabric to integrate AI into life/work</li>
-                  <li>Live Pattern-building for attendee use cases</li>
+                  <li>Building your TELOS File</li>
+                  <li>Building a Life Workflow Diagram</li>
+                  <li>Using Fabric with your TELOS File</li>
+                  <li>Live hacking on our TELOS files</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -117,13 +116,11 @@
                 alt="Icon 04"
               />
               <div class="grow">
-                <div class="font-hkgrotesk font-bold text-xl">Resources</div>
+                <div class="font-hkgrotesk font-bold text-xl">Human 3.0</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>A list of recommended books</li>
-                  <li>Recommended podcasts</li>
-                  <li>Recommended people to follow</li>
-                  <li>Favorite projects and tools</li>
-                  <li>Other recommended training/courses/resources</li>
+                  <li>The Path to Human 3.0</li>
+                  <li>Required Human 3.0 Infrastructure</li>
+                  <li>Your Human 3.0 Checklist</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
