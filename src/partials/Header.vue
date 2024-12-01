@@ -37,7 +37,7 @@
               <router-link class="font-medium text-slate-500 hover:text-slate-300 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out" to="/signin">Sign in</router-link>
             </li> -->
             <li class="ml-3">
-              <a class="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://book.stripe.com/fZe2bLdbK8pwgYE6oF">
+              <a class="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://buy.stripe.com/28o7w5c7GaxEbEk7sI">
                 Register Today <span class="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
               </a>
             </li>
