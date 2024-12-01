@@ -21,7 +21,8 @@
         <div class="text-center">
           <div class="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <div data-aos="fade-up" data-aos-delay="100">
-              <a class="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://book.stripe.com/fZe2bLdbK8pwgYE6oF<span class="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+              <a class="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://book.stripe.com/fZe2bLdbK8pwgYE6oF">
+                Register Today <span class="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
               </a>
             </div>
           </div>
