@@ -14,7 +14,7 @@
 
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-          <h2 class="h2 font-hkgrotesk">Build and your own AI-powered Life Workflow Diagram.</h2>
+          <h2 class="h2 font-hkgrotesk">Integrate AI Into Your Life and Career to Stay Ahead.</h2>
         </div>
 
         <!-- Buttons -->
