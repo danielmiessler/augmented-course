@@ -6,10 +6,10 @@
       aria-hidden="true"
     >
       <img
-        src="../images/hero-illustration.svg"
+        src="../images/augmented-2025-1.png"
         class="max-w-none opacity-5"
-        width="1440"
-        height="1265"
+        width="1200"
+        height="1400"
         alt="Hero Illustration"
       />
     </div>
