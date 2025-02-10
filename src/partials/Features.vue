@@ -21,10 +21,10 @@
           <h2 class="h2 font-hkgrotesk mb-4 uppercase">A(I)UGMENT Yourself</h2>
           <div class="max-w-2xl mx-auto">
             <p class="text-xl text-slate-500">
-              I run a space-limited, 3-hour live AI course twice a year.<br />
+              I run an course focused around upgrading yourself with AI.<br />
             </p>
             <p class="text-lg text-slate-500">
-              The next course is February 3rd, 2025, at 9AM Pacific.<br /><br />
+              The next course will be available for purchase online, and should come out in March of 2025. Stay tuned!<br /><br />
             </p>
             <p class="text-xl text-slate-500">Here's what you'll learn:</p>
           </div>
