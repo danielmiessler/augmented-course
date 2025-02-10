@@ -93,12 +93,12 @@
                 alt="Icon 03"
               />
               <div class="grow">
-                <div class="font-hkgrotesk font-bold text-xl">Your Personal TELOS Infrastructure</div>
+                <div class="font-hkgrotesk font-bold text-xl">Your Personal AI Infrastructure</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>Building your TELOS File</li>
-                  <li>Building a Life Workflow Diagram</li>
-                  <li>Using Fabric with your TELOS File</li>
-                  <li>Live hacking on our TELOS files</li>
+                  <li>Building your own AI microservices</li>
+                  <li>Building your own Agent</li>
+                  <li>OS integrations to your AI</li>
+                  <li>Integrating your AI into your life workflows</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
@@ -118,9 +118,10 @@
               <div class="grow">
                 <div class="font-hkgrotesk font-bold text-xl">Human 3.0</div>
                 <ul class="text-slate-500 mb-3 list-disc mt-2 pl-4 ml-3">
-                  <li>The Path to Human 3.0</li>
-                  <li>Required Human 3.0 Infrastructure</li>
-                  <li>Your Human 3.0 Checklist</li>
+                  <li>What is Human 3.0</li>
+                  <li>Getting your H3 score</li>
+                  <li>How to Move towards H3</li>
+                  <li>Building your H3 plan</li>
                 </ul>
               </div>
               <!-- <div class="text-right">
