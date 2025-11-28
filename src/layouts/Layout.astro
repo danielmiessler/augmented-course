@@ -1,0 +1,41 @@
+---
+import '../styles/global.css'
+import { Background } from '../components/Background';
+import { Nav } from '../components/Nav';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'The AUGMENTED AI Course - Become AI-augmented for the future' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${title} | AUGMENTED`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/augmented_preview.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | AUGMENTED`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="/augmented_preview.png" />
+
+    <title>{title} | AUGMENTED</title>
+  </head>
+  <body class="bg-bg-primary min-h-screen overflow-x-hidden">
+    <Background client:load />
+    <Nav client:load />
+    <slot />
+  </body>
+</html>

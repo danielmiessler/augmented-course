@@ -1,0 +1,8 @@
+name = "augmented-course"
+compatibility_date = "2025-11-28"
+main = "dist/_worker.js"
+workers_dev = true
+preview_urls = true
+
+[assets]
+directory = "./dist"

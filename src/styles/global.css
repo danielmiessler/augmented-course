@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+/* Custom Fonts */
+@font-face {
+  font-family: 'Concourse';
+  src: url('/fonts/concourse_3_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src: url('/fonts/concourse_3_bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse Medium';
+  src: url('/fonts/concourse_4_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse Medium';
+  src: url('/fonts/concourse_4_bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Valkyrie';
+  src: url('/fonts/valkyrie_a_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Valkyrie';
+  src: url('/fonts/valkyrie_a_bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Valkyrie';
+  src: url('/fonts/valkyrie_a_italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Advocate';
+  src: url('/fonts/advocate_34_narr_reg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Advocate Wide';
+  src: url('/fonts/advocate_54_wide_reg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heliotrope';
+  src: url('/fonts/heliotrope_3_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heliotrope Caps';
+  src: url('/fonts/heliotrope_3_caps_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Tailwind v4 Theme */
+@theme {
+  /* Brand Colors - Purple for Augmented */
+  --color-brand: #4E18AC;
+  --color-brand-light: #6B2BD4;
+  --color-brand-dark: #3A1282;
+  --color-brand-glow: rgba(78, 24, 172, 0.4);
+
+  /* Accent - Sky blue */
+  --color-accent: #38BDF8;
+  --color-accent-light: #7DD3FC;
+  --color-accent-dark: #0EA5E9;
+
+  /* Background - Super Dark */
+  --color-bg-primary: #0A0A0C;
+  --color-bg-secondary: #111114;
+  --color-bg-tertiary: #18181C;
+  --color-bg-elevated: #1F1F24;
+
+  /* Text */
+  --color-text-primary: #F5F5F7;
+  --color-text-secondary: #A1A1A6;
+  --color-text-tertiary: #6B6B70;
+
+  /* Borders */
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-default: rgba(255, 255, 255, 0.12);
+  --color-border-emphasis: rgba(255, 255, 255, 0.2);
+
+  /* Fonts */
+  --font-display: 'Advocate Wide', 'Advocate', sans-serif;
+  --font-heading: 'Concourse Medium', 'Concourse', sans-serif;
+  --font-body: 'Valkyrie', Georgia, serif;
+  --font-accent: 'Heliotrope Caps', 'Heliotrope', sans-serif;
+  --font-sans: 'Concourse', system-ui, sans-serif;
+}
+
+/* Base Styles */
+html {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-brand);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-emphasis);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+/* Utility Classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-brand-light) 0%, var(--color-brand) 50%, var(--color-brand-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 50%, var(--color-accent-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-noise {
+  position: relative;
+}
+
+.bg-noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* Glow Effect */
+.glow {
+  box-shadow: 0 0 40px var(--color-brand-glow);
+}
+
+.glow-text {
+  text-shadow: 0 0 40px var(--color-brand-glow);
+}
+
+/* Animated Background Orbs */
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  filter: blur(80px);
+}
+
+.bg-orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--color-brand-glow) 0%, transparent 70%);
+  animation: orb1-float 12s ease-in-out infinite;
+}
+
+.bg-orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, transparent 70%);
+  animation: orb2-float 15s ease-in-out infinite;
+}
+
+@keyframes orb1-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.35;
+  }
+  33% {
+    transform: translate3d(15%, 8%, 0);
+    opacity: 0.5;
+  }
+  66% {
+    transform: translate3d(5%, -5%, 0);
+    opacity: 0.4;
+  }
+}
+
+@keyframes orb2-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate3d(-10%, 15%, 0);
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-orb {
+    animation: none;
+  }
+}

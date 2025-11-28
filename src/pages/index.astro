@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Hero } from '../components/Hero';
+import { Features } from '../components/Features';
+import { Modules } from '../components/Modules';
+import { CTA } from '../components/CTA';
+import { Footer } from '../components/Footer';
+---
+
+<Layout title="Home">
+  <main class="relative z-10">
+    <Hero client:load />
+    <Features client:visible />
+    <Modules client:visible />
+    <CTA client:visible />
+    <Footer client:visible />
+  </main>
+</Layout>
