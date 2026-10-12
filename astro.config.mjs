@@ -4,6 +4,7 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  site: 'https://augmented.unsupervised-learning.com',
   output: 'static',
   integrations: [react()],
   server: {

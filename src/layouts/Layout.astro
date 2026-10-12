@@ -9,6 +9,8 @@ interface Props {
 }
 
 const { title, description = 'The AUGMENTED AI Course - Become AI-augmented for the future' } = Astro.props;
+// X and LinkedIn only fetch absolute https image URLs; resolve against `site` in astro.config.mjs.
+const previewImage = new URL('/augmented_preview.png', Astro.site).href;
 ---
 
 <!doctype html>
@@ -22,14 +24,14 @@ const { title, description = 'The AUGMENTED AI Course - Become AI-augmented for 
     <!-- Open Graph -->
     <meta property="og:title" content={`${title} | AUGMENTED`} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/augmented_preview.png" />
+    <meta property="og:image" content={previewImage} />
     <meta property="og:type" content="website" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${title} | AUGMENTED`} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/augmented_preview.png" />
+    <meta name="twitter:image" content={previewImage} />
 
     <title>{title} | AUGMENTED</title>
   </head>
