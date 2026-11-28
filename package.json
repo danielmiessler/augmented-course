@@ -1,7 +1,7 @@
 {
   "name": "augmented-course",
   "type": "module",
-  "version": "2.0.1.2",
+  "version": "2.0.1.3",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },

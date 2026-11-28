@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1.3 — 2026-11-28
+<!-- release: 8c9de0dc8e4f84579ec0d79bac4b5f0320e500a0 -->
+
+Match the Node versions Vite 8 supports.
+
 ## 2.0.1.2 — 2026-11-28
 <!-- release: 48c45d160e2572a6dfa91fc05e0a8c8847bb3ed7 -->
 
