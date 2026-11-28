@@ -7,8 +7,9 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "astro build && vite build --config vite.cf.config.ts",
+    "preview": "astro preview",
+    "deploy": "bun run build && bun \"$HOME/.claude/LIFEOS/TOOLS/Airlock.ts\" deploy"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -23,9 +24,14 @@
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.17",
+    "@cloudflare/vite-plugin": "^2.0.0-beta.sha-ad79608dd",
+    "cf": "^1.0.0-beta.5",
+    "vite": "^8.3.1"
   },
   "overrides": {
-    "vite": "^6.4.6"
+    "astro": {
+      "vite": "^6.4.6"
+    }
   }
 }
