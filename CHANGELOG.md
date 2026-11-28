@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1.1 — 2026-11-28
+<!-- release: edd2b15d3eabe03149ad7d6eddfd851972d73ffd -->
+
+Serve the site from a Worker so the fix that sends every sign-up button to the live course on Human 3.0 can ship.
+
 ## 2.0.1.0 — 2026-11-27
 <!-- release: b99b12a2a6004790b63c319e6957dd3017c3678a -->
 
