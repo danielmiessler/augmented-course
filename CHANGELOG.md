@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1.4 — 2026-11-28
+<!-- release: be3754d13cb50110e6051139b0e843954c074c0d -->
+
+Unknown paths keep falling back to the home page on the Worker.
+
 ## 2.0.1.3 — 2026-11-28
 <!-- release: 8c9de0dc8e4f84579ec0d79bac4b5f0320e500a0 -->
 
