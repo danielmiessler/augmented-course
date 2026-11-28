@@ -7,6 +7,8 @@ export default defineConfig({
 		// One public URL only: no workers.dev or preview twin.
 		workersDev: false,
 		previewUrls: false,
+		// Replaces the Pages-era _redirects rewrite (/* /index.html): every unknown path serves the home page.
+		assets: { notFoundHandling: "single-page-application" },
 		domains: ["augmented.unsupervised-learning.com"],
 	},
 });
