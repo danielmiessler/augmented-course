@@ -80,7 +80,7 @@ export function Hero({ imageSrc = '/hero.png' }: HeroProps) {
               I run a course focused around upgrading yourself with AI.
             </p>
             <p className="text-text-tertiary text-lg mb-6 font-body">
-              The expanded on-demand course will be available for purchase online in early 2026. Stay tuned!
+              The full slide decks from every version of the course are available now through Human 3.0.
             </p>
             <p className="text-text-secondary text-xl font-body">
               Here's what you'll learn:
@@ -88,10 +88,10 @@ export function Hero({ imageSrc = '/hero.png' }: HeroProps) {
           </div>
 
           <a
-            href="#features"
+            href="https://human3.ai/courses"
             className="inline-block px-8 py-4 rounded-xl font-heading font-semibold text-lg bg-brand hover:bg-brand-light text-white transition-all duration-300 shadow-lg shadow-brand/30 hover:shadow-brand/50 hover:scale-105"
           >
-            Explore the Course
+            Get the Course
           </a>
         </motion.div>
       </div>
