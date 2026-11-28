@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1.2 — 2026-11-28
+<!-- release: 48c45d160e2572a6dfa91fc05e0a8c8847bb3ed7 -->
+
+Require Node 20.19 or newer, which the new Worker build needs.
+
 ## 2.0.1.1 — 2026-11-28
 <!-- release: edd2b15d3eabe03149ad7d6eddfd851972d73ffd -->
 
